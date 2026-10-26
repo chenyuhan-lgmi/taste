@@ -26,7 +26,7 @@ const icons={
 };
 const icon=(name,cls='')=>`<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name]||icons.leaf}</svg>`;
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const ASSET='https://chenyuhan-lgmi.github.io/food-picker/taste/assets/';
+const ASSET='./assets/';
 const image=p=>`${ASSET}${p.image}.jpg`;
 const storageKey='taste-order-v1';
 let stored={};try{stored=JSON.parse(localStorage.getItem(storageKey)||'{}')}catch{}
